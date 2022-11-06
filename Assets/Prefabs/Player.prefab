@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 4102820182838039911}
   - component: {fileID: 4102820182838039910}
   - component: {fileID: 4102820182838039909}
-  m_Layer: 0
+  - component: {fileID: -8975730885808439936}
+  - component: {fileID: -8970805594304265176}
+  - component: {fileID: 940967168}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,3 +102,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
+--- !u!60 &-8975730885808439936
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102820182838039908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.12, y: 0.75}
+    newSize: {x: 1.12, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.42023996, y: -0.27126494}
+      - {x: 0.541325, y: -0.09126541}
+      - {x: 0.56, y: -0.059819832}
+      - {x: 0.47385496, y: -0.011144982}
+      - {x: 0.44723016, y: -0.019700356}
+      - {x: 0.10132497, y: 0.18391475}
+      - {x: 0.08057881, y: 0.24020958}
+      - {x: 0.03276989, y: 0.36994025}
+      - {x: 0.03011996, y: 0.375}
+      - {x: -0.033974923, y: 0.37873507}
+      - {x: -0.11409488, y: 0.17861511}
+      - {x: -0.563735, y: -0.048615113}
+      - {x: -0.56, y: -0.049094915}
+      - {x: -0.51758987, y: -0.13270956}
+      - {x: -0.38132495, y: -0.33764982}
+      - {x: -0.17385495, y: -0.29271004}
+      - {x: -0.11264996, y: -0.37126493}
+      - {x: 0.10638495, y: -0.37873507}
+      - {x: 0.16011997, y: -0.28391522}
+      - {x: 0.32747, y: -0.33259007}
+      - {x: 0.3750599, y: -0.34632513}
+--- !u!114 &-8970805594304265176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102820182838039908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5027c9374eba7429bbd10a351c3299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  deathSFX: {fileID: 8300000, guid: 38dfb9ff2c35f3c459a9eaf1f522d9b7, type: 3}
+  deathSoundVolume: 0.7
+--- !u!114 &940967168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4102820182838039908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54e61873bf648a4caa6f95cd4a4165b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lazerPrefab: {fileID: 6972702750084133697, guid: ec382b65050b59040914e19b8bae8f8f, type: 3}
+  projectileSpeed: 10
+  projectileFirePeriod: 0.1
+  shotSFX: {fileID: 8300000, guid: ec32a3b0376dd044f9f9844390dd6152, type: 3}
+  shotSoundVolume: 0.3

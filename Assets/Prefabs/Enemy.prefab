@@ -10,7 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3824254199130818377}
   - component: {fileID: 3824254199130818382}
-  m_Layer: 0
+  - component: {fileID: 5487561000648475535}
+  - component: {fileID: -5158256644275137549}
+  - component: {fileID: 4401989427272120067}
+  - component: {fileID: 4745288353706891046}
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +88,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5487561000648475535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824254199130818383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce27cae9d72d9c40b7b49b9127f3cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &-5158256644275137549
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824254199130818383}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.465
+--- !u!114 &4401989427272120067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824254199130818383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b10f1b92e5f4c48ba34e541b2d7601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenShots: 0.1
+  maxTimeBetweenShots: 1
+  projectile: {fileID: 4753165786875428729, guid: 96bc404a3d6b0d14f9df086eb559d3d8, type: 3}
+  projectileSpeed: 10
+  shotSFX: {fileID: 8300000, guid: aaceac7bfd8176c4eb6b5a56f7bc6877, type: 3}
+  shotSoundVolume: 0.3
+--- !u!114 &4745288353706891046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824254199130818383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41b663c1d3d16a42aba88c1fc6a70a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 3404630153453665039, guid: b8e9857bcdc3ec346b877cd573d65da6, type: 3}
+  deathSFX: {fileID: 8300000, guid: 68318b2401ef12247b54f95adc8479be, type: 3}
+  explosionDuration: 1
+  deathSoundVolume: 0.7
