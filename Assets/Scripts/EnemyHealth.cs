@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float health = 100f;
+    [SerializeField] int score = 150;
     [SerializeField] GameObject deathVFX;
     [SerializeField] AudioClip deathSFX;
     [SerializeField] float explosionDuration = 1f;
@@ -24,10 +25,17 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void OnDeath(){
+    private void OnDeath()
+    {
+        AddScore();
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, explosionDuration);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSoundVolume);
+    }
+
+    private void AddScore()
+    {
+        FindObjectOfType<GameSession>().AddScore(score);
     }
 }

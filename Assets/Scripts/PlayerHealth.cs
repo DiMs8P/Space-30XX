@@ -23,7 +23,10 @@ public class PlayerHealth : MonoBehaviour
     }
 
     private void Die(){
+        FindObjectOfType<LevelOptions>().LoadGameOver();
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSoundVolume);
     }
+
+    public float GetHealth() => health;
 }

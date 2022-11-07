@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyWeapon : MonoBehaviour
 {
-    [SerializeField] float shotCounter = 0f;
+    private float _shotCounter = 0f;
     [SerializeField] float minTimeBetweenShots = 0.1f;
     [SerializeField] float maxTimeBetweenShots = 1f;
     [SerializeField] GameObject projectile;
@@ -15,7 +15,7 @@ public class EnemyWeapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+        _shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
     // Update is called once per frame
@@ -25,10 +25,10 @@ public class EnemyWeapon : MonoBehaviour
     }
 
     private void CountDownAndShoot(){
-        shotCounter -= Time.deltaTime;
-        if (shotCounter <= 0f){
+        _shotCounter -= Time.deltaTime;
+        if (_shotCounter <= 0f){
             Fire();
-            shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+            _shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
         }
     }
 
