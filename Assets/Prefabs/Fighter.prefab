@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b10f1b92e5f4c48ba34e541b2d7601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotCounter: 0
   minTimeBetweenShots: 0.1
   maxTimeBetweenShots: 1
   projectile: {fileID: 4753165786875428729, guid: 96bc404a3d6b0d14f9df086eb559d3d8, type: 3}
@@ -149,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41b663c1d3d16a42aba88c1fc6a70a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
+  score: 150
   deathVFX: {fileID: 3404630153453665039, guid: b8e9857bcdc3ec346b877cd573d65da6, type: 3}
   deathSFX: {fileID: 8300000, guid: 68318b2401ef12247b54f95adc8479be, type: 3}
   explosionDuration: 1

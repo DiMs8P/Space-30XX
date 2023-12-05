@@ -890,12 +890,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7749814206558535720, guid: e5c96480632bbef41a7f1b4526ca933f, type: 3}
       propertyPath: waveConfigs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7749814206558535720, guid: e5c96480632bbef41a7f1b4526ca933f, type: 3}
       propertyPath: waveConfigs.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 9c35c9fed2773cf4aa1e4dfd7b0723ef, type: 2}
+    - target: {fileID: 7749814206558535720, guid: e5c96480632bbef41a7f1b4526ca933f, type: 3}
+      propertyPath: waveConfigs.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2014dff10ef057a48a30a6c36eff5ec2, type: 2}
     - target: {fileID: 7749814206558535721, guid: e5c96480632bbef41a7f1b4526ca933f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner

@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b10f1b92e5f4c48ba34e541b2d7601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 2
+  minTimeBetweenShots: 0.5
+  maxTimeBetweenShots: 1
   projectile: {fileID: 4753165786875428729, guid: 1a77f60c47cc0a54cb1b8f9d18d29acf, type: 3}
   projectileSpeed: 5
   shotSFX: {fileID: 8300000, guid: c9285ffcb9d1dc74096f416c5e4f7536, type: 3}
